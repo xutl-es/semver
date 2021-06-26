@@ -1,0 +1,34 @@
+{
+  "name": "@xutl/semver",
+  "version": "1.0.0",
+  "description": "Semantic Versioniong",
+  "main": "lib/semver.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib/semver.js",
+    "lib/semver.d.ts",
+    "lib/version.js",
+    "lib/version.d.ts",
+    "lib/requirement.js",
+    "lib/requirement.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "xutltest 'lib/**/*.t.js'"
+  },
+  "keywords": [
+    "SemVer",
+    "Semantic",
+    "Version"
+  ],
+  "author": "Philipp Dunkel <pip@pipobscure.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "@xutl/test": "^1.0.2",
+    "typescript": "^4.3.4"
+  }
+}
