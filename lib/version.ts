@@ -1,4 +1,4 @@
-export const VERSIONREGEX = /(\d+)\.(\d+)(?:\.(\d+))?(?:-([a-zA-Z0-9_\-+]+))?/;
+export const VERSIONREGEX = /(\d+)\.(\d+)(?:\.(\d+))?(?:-([a-zA-Z0-9_\-+.]+))?/;
 const RE_VERSION = new RegExp(`^(?:v|\\^|~|>=|<=|>|<)?${VERSIONREGEX.source}$`);
 
 export interface VersionLike {
